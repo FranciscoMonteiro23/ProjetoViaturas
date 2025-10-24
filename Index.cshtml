@@ -1,0 +1,45 @@
+﻿@page
+@model StandAutomoveis.Pages.Viaturas.IndexModel
+@{
+    ViewData["Title"] = "Stand de Automóveis";
+}
+
+<h1>Stand de Automóveis</h1>
+
+<form method="get">
+    <label>Filtrar por Loja:</label>
+    <select asp-for="LojaSelecionada" asp-items="Model.Lojas">
+        <option value="">Todas</option>
+    </select>
+    <button type="submit">Filtrar</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Ano</th>
+            <th>Loja</th>
+            <th>Tipo</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var viatura in Model.Viaturas)
+        {
+            <tr>
+                <td>@viatura.Marca</td>
+                <td>@viatura.Ano</td>
+                <td>@viatura.Loja</td>
+                <td>@viatura.Tipo</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@viatura.Id">Editar</a> |
+                    <a asp-page="Details" asp-route-id="@viatura.Id">Detalhes</a> |
+                    <a asp-page="Delete" asp-route-id="@viatura.Id">Apagar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</a>
+<a asp-page="Create" class="btn btn-primary">Adicionar Viatura</a>
