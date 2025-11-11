@@ -1,68 +1,57 @@
-# StandAutomoveis2
+# 🚗 StandAutomoveis2
 
-## Descrição
+## 📘 Project Description
 
-StandAutomoveis2 é uma aplicação web desenvolvida em **ASP.NET Core Razor Pages** para a administração de viaturas de um stand. Permite gerir viaturas, adicionando novos veículos, editando, apagando, visualizando detalhes e filtrando por loja. Cada veículo possui também um campo **Tipo** que classifica como **Citadino, Familiar ou Desportivo**.
-
----
-
-## Funcionalidades
-
-- CRUD completo de viaturas (Create, Read, Update, Delete)
-- Filtro por **Loja** com opção de mostrar todas
-- Adição de novos veículos com campos obrigatórios:
-  - Marca (até 20 caracteres)
-  - Ano
-  - Loja (até 20 caracteres)
-  - Tipo (Citadino, Familiar, Desportivo)
-- Visualização de detalhes das viaturas
-- Interface moderna com **Bootstrap**
-- Dados iniciais carregados automaticamente:
-  - Fiat 2016 Aveiro / Lisboa / Porto
-  - Opel 2017 Aveiro / 2018 Porto / 2018 Lisboa
-  - Ferrari 2017 Porto
+**StandAutomoveis2** is a web application developed with **ASP.NET Core Razor Pages** for managing a car dealership’s vehicle inventory.  
+It allows users to **create, view, edit, and delete** vehicles, as well as **filter** them by dealership location.  
+Each vehicle includes a **Type** field that classifies it as **City, Family, or Sports**.
 
 ---
 
-## Estrutura do projeto
-StandAutomoveis2/
-│
-├─ Program.cs
-├─ appsettings.json
-├─ StandAutomoveis2.csproj
-├─ Models/
-│   └─ Viatura.cs
-├─ Data/
-│   └─ ViaturaContext.cs
-└─ Pages/
-├─ Viaturas/
-│   ├─ Index.cshtml
-│   ├─ Index.cshtml.cs
-│   ├─ Create.cshtml
-│   ├─ Create.cshtml.cs
-│   ├─ Edit.cshtml
-│   ├─ Edit.cshtml.cs
-│   ├─ Delete.cshtml
-│   ├─ Delete.cshtml.cs
-│   ├─ Details.cshtml
-│   └─ Details.cshtml.cs
-└─ Shared/
-└─ _Layout.cshtml
+## 🎯 Features
+
+- Full **CRUD** functionality for vehicle management (Create, Read, Update, Delete)  
+- Filter vehicles by **Dealership (Loja)** or show all  
+- Add new vehicles with required fields:
+  - **Brand** (up to 20 characters)
+  - **Year**
+  - **Dealership (Loja)** (up to 20 characters)
+  - **Type** (City, Family, or Sports)
+- Detailed view for each vehicle  
+- Clean, responsive interface using **Bootstrap 5**  
+- **Preloaded sample data** for testing:
+  - Fiat 2016 (Aveiro / Lisbon / Porto)
+  - Opel 2017 (Aveiro), 2018 (Porto / Lisbon)
+  - Ferrari 2017 (Porto)
 
 ---
 
-## Tecnologias utilizadas
+## 🛠️ Technologies Used
 
-- .NET 6 / 7
-- ASP.NET Core Razor Pages
-- Entity Framework Core (SQLite)
-- Bootstrap 5
-- C#
+- **.NET 6 / 7**
+- **ASP.NET Core Razor Pages**
+- **Entity Framework Core (SQLite)**
+- **Bootstrap 5**
+- **C#**
 
 ---
 
-## Pré-requisitos
+## ⚙️ Requirements
 
-- [.NET SDK 6 ou superior](https://dotnet.microsoft.com/download)
-- Visual Studio Code (ou outro IDE de preferência)
-- SQLite (opcional, mas já incluído na aplicação)
+Before running the project, make sure you have:
+
+- [✅ .NET SDK 6.0 or higher](https://dotnet.microsoft.com/download)
+- [✅ Git](https://git-scm.com/)
+- [✅ Visual Studio or VS Code](https://visualstudio.microsoft.com/)
+- SQLite (optional, already configured in the project)
+
+---
+
+## 🚀 How to Run the Project (via Git + .NET CLI)
+
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/FranciscoMonteiro23/StandAutomoveis2.git
+   cd StandAutomoveis2
+
+
